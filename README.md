@@ -15,3 +15,20 @@ It supports user authentication, folder/file CRUD, upload/download with progress
 - Upload/download/ delete files ( progress bars )
 - Authorization/validation ( frontend & backend )
 - TailwindCSS for UI
+
+## DB Migrate
+
+```
+npm install --save sequelize-cli
+```
+
+```
+npx sequelize-cli init
+```
+
+```
+config/config.json     // DB connection configs
+migrations/            // migration files go here
+models/                // Sequelize models
+seeders/               // optional seed data
+```
