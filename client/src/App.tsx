@@ -1,10 +1,10 @@
-function App() {
+import Auth from "./Auth";
+import Dashboard from "./Dashboard";
 
-  return (
-    <h1 className="text-red-200">
-      Make Changes to App.tsx
-    </h1>
-  )
+function App() {
+  const token = localStorage.getItem("token");
+
+  return token ? <Dashboard /> : <Auth />;
 }
 
-export default App
+export default App;
